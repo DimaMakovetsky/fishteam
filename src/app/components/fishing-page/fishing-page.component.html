@@ -1,0 +1,12 @@
+<div class="items" *ngIf="!errorOnLoad">
+    
+    <div class="item" *ngFor="let item of items" >
+        <p class="title">{{item.title}}</p>
+        <p class="price">{{item.price}} BYN</p>
+        <img src="http://localhost:3000{{item.photo}}" alt="{{item.title}}">
+    </div>
+</div>
+<div class="errorDiv" *ngIf="errorOnLoad">
+    <p>Произошла ошибка при подключении к серверу. Повторите попытку позже</p>
+    <img src="assets/images/error.jpg" alt="Error">
+</div>

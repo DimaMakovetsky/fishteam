@@ -8,18 +8,22 @@ import { FooterComponent } from './components/footer/footer.component';
 import { FrontPageComponent } from './components/front-page/front-page.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MdbCarouselModule } from 'mdb-angular-ui-kit/carousel';
+import { FishingPageComponent } from './components/fishing-page/fishing-page.component';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    FrontPageComponent
+    FrontPageComponent,
+    FishingPageComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    MdbCarouselModule
+    MdbCarouselModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

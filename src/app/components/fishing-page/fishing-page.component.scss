@@ -1,0 +1,45 @@
+.items
+{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.items>*
+{
+    flex: 1 1 80px;
+}
+.item
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 20px;
+    padding-bottom: 20px;
+    margin-top: 5px;
+    box-shadow: 1px 1px #212121;
+
+}
+.title
+{
+    font-weight: 700;
+}
+img
+{
+    width: 300px;
+}
+.errorDiv
+{
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 20vh 0 20vh 0;
+
+}
