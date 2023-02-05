@@ -10,20 +10,26 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MdbCarouselModule } from 'mdb-angular-ui-kit/carousel';
 import { FishingPageComponent } from './components/fishing-page/fishing-page.component';
 import { HttpClientModule } from '@angular/common/http';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { ClothesPageComponent } from './components/clothes-page/clothes-page.component';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
     FrontPageComponent,
-    FishingPageComponent
+    FishingPageComponent,
+    PageNotFoundComponent,
+    ClothesPageComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
     MdbCarouselModule,
-    HttpClientModule
+    HttpClientModule,
+    MatProgressSpinnerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,14 +1,14 @@
-import { FetchMomentService } from './../services/fetch-moment.service';
 import { Component, OnInit } from '@angular/core';
 import { ThemePalette } from '@angular/material/core';
 import { ProgressSpinnerMode } from '@angular/material/progress-spinner';
+import { FetchMomentService } from '../services/fetch-moment.service';
+
 @Component({
-  selector: 'app-fishing-page',
-  templateUrl: './fishing-page.component.html',
-  styleUrls: ['./fishing-page.component.scss']
+  selector: 'app-clothes-page',
+  templateUrl: './clothes-page.component.html',
+  styleUrls: ['./clothes-page.component.scss']
 })
-export class FishingPageComponent implements OnInit 
-{
+export class ClothesPageComponent implements OnInit{
   color: ThemePalette = 'warn';
   mode: ProgressSpinnerMode = 'indeterminate';
   items:any;
@@ -18,7 +18,7 @@ export class FishingPageComponent implements OnInit
     this.errorOnLoad=false;
   }
   ngOnInit(): void {
-    this.service.getPosts("fishing")
+    this.service.getPosts("clothes")
         .subscribe({
           next: (v)=>
           {
