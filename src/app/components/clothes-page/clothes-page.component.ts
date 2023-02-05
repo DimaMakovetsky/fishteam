@@ -8,17 +8,22 @@ import { FetchMomentService } from '../services/fetch-moment.service';
   templateUrl: './clothes-page.component.html',
   styleUrls: ['./clothes-page.component.scss']
 })
-export class ClothesPageComponent implements OnInit{
+export class ClothesPageComponent{
   color: ThemePalette = 'warn';
   mode: ProgressSpinnerMode = 'indeterminate';
   items:any;
   errorOnLoad:boolean;
-  isLoading:boolean=true;
+  isLoading:boolean=false;
+  isChosen=false;
   constructor(private service:FetchMomentService){
     this.errorOnLoad=false;
   }
-  ngOnInit(): void {
-    this.service.getPosts("clothes")
+  clickTheDiv(category:string):void
+  {
+    console.log(category);
+    this.isChosen=true;
+    this.isLoading=true;
+    this.service.getPosts(category)
         .subscribe({
           next: (v)=>
           {

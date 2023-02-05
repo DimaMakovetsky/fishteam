@@ -1,10 +1,28 @@
 <div class="items" *ngIf="!errorOnLoad&&!isLoading">
-    
-    <div class="item" *ngFor="let item of items" >
-        <p class="title">{{item.title}}</p>
-        <p class="price">{{item.price}} BYN</p>
-        <img src="http://localhost:3000{{item.photo}}" alt="{{item.title}}">
-    </div>
+    <ng-container *ngIf="!isChosen">
+        <div class="choices">
+            <div class="choice" (click)="clickTheDiv('softBates')">
+                <p>Мягкие приманки</p>
+            </div>
+            <div class="choice" (click)="clickTheDiv('rods')">
+                <p>Удилища</p>
+            </div>
+            <div class="choice" (click)="clickTheDiv('hooks')">
+                <p>Крючки</p>
+            </div>
+            <div class="choice" (click)="clickTheDiv('accessories')">
+                <p>Аксессуары</p>
+            </div>
+            
+        </div>
+    </ng-container>
+    <ng-container *ngIf="isChosen">
+        <div class="item" *ngFor="let item of items" >
+            <p class="title">{{item.title}}</p>
+            <p class="price">{{item.price}} BYN</p>
+            <img src="http://localhost:3000{{item.photo}}" alt="{{item.title}}">
+        </div>
+    </ng-container>
 </div>
 <div *ngIf="isLoading" class="spinner">
     <mat-progress-spinner

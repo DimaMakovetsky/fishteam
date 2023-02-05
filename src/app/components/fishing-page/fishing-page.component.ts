@@ -7,18 +7,23 @@ import { ProgressSpinnerMode } from '@angular/material/progress-spinner';
   templateUrl: './fishing-page.component.html',
   styleUrls: ['./fishing-page.component.scss']
 })
-export class FishingPageComponent implements OnInit 
+export class FishingPageComponent 
 {
   color: ThemePalette = 'warn';
   mode: ProgressSpinnerMode = 'indeterminate';
   items:any;
   errorOnLoad:boolean;
-  isLoading:boolean=true;
+  isLoading:boolean=false;
+  isChosen:boolean=false;
   constructor(private service:FetchMomentService){
     this.errorOnLoad=false;
   }
-  ngOnInit(): void {
-    this.service.getPosts("fishing")
+  clickTheDiv(category:string):void
+  {
+    console.log(category);
+    this.isChosen=true;
+    this.isLoading=true;
+    this.service.getPosts(category)
         .subscribe({
           next: (v)=>
           {
