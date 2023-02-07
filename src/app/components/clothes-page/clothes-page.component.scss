@@ -7,8 +7,7 @@
     max-width: 1080px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 250px;
-
+    min-height: 65vh;
 }
 .items>*
 {
@@ -21,7 +20,7 @@
     padding-bottom: 20px;
     margin-top: 5px;
     box-shadow: 1px 1px #212121;
-
+    height: fit-content;
 }
 .title
 {
@@ -57,7 +56,7 @@ img
     justify-content: center;
     border-radius: 40px;
     font-weight: 700;
-
+    cursor: pointer;
 }
 .errorDiv
 {

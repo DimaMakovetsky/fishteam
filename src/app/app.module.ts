@@ -15,6 +15,8 @@ import { ClothesPageComponent } from './components/clothes-page/clothes-page.com
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import { CommonModule } from '@angular/common';
 import { ItemPageComponent } from './components/item-page/item-page.component';
+import { ContactsPageComponent } from './components/contacts-page/contacts-page.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +26,8 @@ import { ItemPageComponent } from './components/item-page/item-page.component';
     FishingPageComponent,
     PageNotFoundComponent,
     ClothesPageComponent,
-    ItemPageComponent
+    ItemPageComponent,
+    ContactsPageComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +36,8 @@ import { ItemPageComponent } from './components/item-page/item-page.component';
     MdbCarouselModule,
     HttpClientModule,
     MatProgressSpinnerModule,
-    CommonModule
+    CommonModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

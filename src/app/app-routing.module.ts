@@ -5,6 +5,7 @@ import { FishingPageComponent } from './components/fishing-page/fishing-page.com
 import { FrontPageComponent } from './components/front-page/front-page.component';
 import { ClothesPageComponent } from './components/clothes-page/clothes-page.component';
 import { ItemPageComponent } from './components/item-page/item-page.component';
+import { ContactsPageComponent } from './components/contacts-page/contacts-page.component';
 
 const routes: Routes = [
   {
@@ -19,19 +20,28 @@ const routes: Routes = [
   {
     path:"fishing",
     component:FishingPageComponent,
+    title:"Рыболовные товары"
+  },
     
+  {
+    path:"clothes",  
+    component:ClothesPageComponent,
+    title:"Брендовая одежда"
   },
   {
     path:"items/:id",
-    component:ItemPageComponent
+    component:ItemPageComponent,
+    title:"Товар"
   },
   {
-    path:"clothes",
-    component:ClothesPageComponent
+    path:"contacts",
+    component:ContactsPageComponent,
+    title:"Контакты"
   },
   {
-    path:"**",
-    component:PageNotFoundComponent
+      path:"**",
+    component:PageNotFoundComponent,
+    title:"Страница не нейдена"
   }
 ];
 

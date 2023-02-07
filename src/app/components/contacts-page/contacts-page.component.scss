@@ -1,0 +1,33 @@
+.contacts
+{
+    height: 65vh;
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.staffMember
+{
+    min-width: 300px;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1
+{
+    font-weight: 700;
+    font-size: 20px;
+}
+img
+{
+    height: 300px;
+    border-radius: 20px;
+}
+.phone
+{
+    font-size: 30px;
+    margin-top: 10px;
+}
