@@ -20,7 +20,6 @@ export class ClothesPageComponent{
   }
   clickTheDiv(category:string):void
   {
-    console.log(category);
     this.isChosen=true;
     this.isLoading=true;
     this.service.getPosts(category)

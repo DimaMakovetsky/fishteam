@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { FishingPageComponent } from './components/fishing-page/fishing-page.component';
 import { FrontPageComponent } from './components/front-page/front-page.component';
 import { ClothesPageComponent } from './components/clothes-page/clothes-page.component';
+import { ItemPageComponent } from './components/item-page/item-page.component';
 
 const routes: Routes = [
   {
@@ -17,7 +18,12 @@ const routes: Routes = [
   },
   {
     path:"fishing",
-    component:FishingPageComponent
+    component:FishingPageComponent,
+    
+  },
+  {
+    path:"items/:id",
+    component:ItemPageComponent
   },
   {
     path:"clothes",

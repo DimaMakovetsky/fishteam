@@ -14,6 +14,7 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
 import { ClothesPageComponent } from './components/clothes-page/clothes-page.component';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import { CommonModule } from '@angular/common';
+import { ItemPageComponent } from './components/item-page/item-page.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +23,8 @@ import { CommonModule } from '@angular/common';
     FrontPageComponent,
     FishingPageComponent,
     PageNotFoundComponent,
-    ClothesPageComponent
+    ClothesPageComponent,
+    ItemPageComponent
   ],
   imports: [
     BrowserModule,

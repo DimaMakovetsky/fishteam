@@ -11,9 +11,11 @@
     </ng-container>
     <ng-container *ngIf="isChosen">
         <div class="item" *ngFor="let item of items" >
-            <p class="title">{{item.title}}</p>
-            <p class="price">{{item.price}} BYN</p>
-            <img src="http://localhost:3000{{item.photo}}" alt="{{item.title}}">
+            <a routerLink="../items/{{item.id}}">
+                <p class="title">{{item.title}}</p>
+                <p class="price">{{item.price}} BYN</p>
+                <img src="http://localhost:3000{{item.photo}}" alt="{{item.title}}">
+            </a>
         </div>
     </ng-container>
 </div>

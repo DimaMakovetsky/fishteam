@@ -1,5 +1,5 @@
 import { FetchMomentService } from './../services/fetch-moment.service';
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { ThemePalette } from '@angular/material/core';
 import { ProgressSpinnerMode } from '@angular/material/progress-spinner';
 @Component({
@@ -7,7 +7,7 @@ import { ProgressSpinnerMode } from '@angular/material/progress-spinner';
   templateUrl: './fishing-page.component.html',
   styleUrls: ['./fishing-page.component.scss']
 })
-export class FishingPageComponent 
+export class FishingPageComponent
 {
   color: ThemePalette = 'warn';
   mode: ProgressSpinnerMode = 'indeterminate';
@@ -20,7 +20,6 @@ export class FishingPageComponent
   }
   clickTheDiv(category:string):void
   {
-    console.log(category);
     this.isChosen=true;
     this.isLoading=true;
     this.service.getPosts(category)
@@ -37,4 +36,5 @@ export class FishingPageComponent
           },
         })
   }
+  
 }
