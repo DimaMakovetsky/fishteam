@@ -12,4 +12,14 @@ export class FetchMomentService {
   getPosts(path:string){
     return this.httpClient.get(this.url+path);
   }
+  // sendPost(call:any)
+  // {
+  //   const body=
+  //   {
+  //     name: call.name,
+  //     phone:call.phone,
+  //   }
+    
+  //   return this.httpClient.post(this.url+"post", body)
+  // }
 }

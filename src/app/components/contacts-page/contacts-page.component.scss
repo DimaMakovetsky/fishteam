@@ -1,7 +1,12 @@
 .contacts
 {
-    height: 65vh;
     max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.members
+{
+    
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -30,4 +35,25 @@ img
 {
     font-size: 30px;
     margin-top: 10px;
+}
+form
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h2
+{
+    margin-top: 20px;
+
+}
+.inputs
+{
+    display: flex;
+    gap: 20px;
+}
+button
+{
+    margin-bottom: 20px;
 }
