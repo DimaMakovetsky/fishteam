@@ -6,6 +6,7 @@ import { FrontPageComponent } from './components/front-page/front-page.component
 import { ClothesPageComponent } from './components/clothes-page/clothes-page.component';
 import { ItemPageComponent } from './components/item-page/item-page.component';
 import { ContactsPageComponent } from './components/contacts-page/contacts-page.component';
+import { AboutPageComponent } from './components/about-page/about-page.component';
 
 const routes: Routes = [
   {
@@ -37,6 +38,11 @@ const routes: Routes = [
     path:"contacts",
     component:ContactsPageComponent,
     title:"Контакты"
+  },
+  {
+    path:"about",
+    component:AboutPageComponent,
+    title:"О нас"
   },
   {
       path:"**",

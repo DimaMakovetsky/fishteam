@@ -21,6 +21,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
+import { AboutPageComponent } from './components/about-page/about-page.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +32,8 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
     PageNotFoundComponent,
     ClothesPageComponent,
     ItemPageComponent,
-    ContactsPageComponent
+    ContactsPageComponent,
+    AboutPageComponent
   ],
   imports: [
     BrowserModule,
