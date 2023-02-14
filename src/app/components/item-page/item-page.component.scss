@@ -32,3 +32,17 @@ img
     padding: 20vh 0 20vh 0;
 
 }
+@media screen and (max-width:1024px) 
+{
+    .title
+    {
+        text-align: center;
+        line-height: 30px;
+
+    }
+    img
+    {
+        width: 90%;
+    }
+    
+}

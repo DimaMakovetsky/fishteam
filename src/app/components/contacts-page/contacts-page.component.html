@@ -29,7 +29,7 @@
             <mat-form-field>
                 <mat-label>Телефон</mat-label>
                 <span matPrefix>+375 &nbsp;</span>
-                <input type="text" matInput placeholder="(12) 345-67-89" [formControl]="phoneForm.controls.phone">
+                <input type="text" matInput placeholder="123456789" [formControl]="phoneForm.controls.phone">
             </mat-form-field>
         </div>
         <button mat-raised-button color="accent" (click)="send()" [disabled]="phoneForm.pristine||phoneForm.invalid">Отправить</button>

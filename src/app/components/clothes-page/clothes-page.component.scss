@@ -80,3 +80,15 @@ a
     flex-direction: column;
     
 }
+@media only screen and (max-width:1024px)
+{   
+    .items
+    {
+        width: 80%;
+    }
+    .choices
+    {
+        flex-direction: column;
+        justify-content: center;
+    }
+}

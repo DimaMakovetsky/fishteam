@@ -1,14 +1,17 @@
 <div class="backColorHeader">
 
     <div class="headerDiv">
-        <div class="logo">
-            <a href=""><img src="assets/images/fishTeam.png" alt="logo" class="logo"></a>
+        <label for="check"><fa-icon [icon]="faBars"></fa-icon></label>
+        <input type="checkbox" id="check" />
+
+        <div class="logo visibleButton">
+            <a routerLink="front"><img src="assets/images/fishTeam.png" alt="logo" class="logo"></a>
         </div>
-        <p><a routerLink="fishing">Рыбалка</a></p>
-        <p><a routerLink="clothes">Одежда</a></p>
-        <p><a routerLink="contacts">Контакты</a></p>
-        <p><a routerLink="about">О нас</a></p>
-        <p class="phone"><fa-icon [icon]="faPhone"></fa-icon> +375 (44) 157-17-45</p>        
+        <p class="visibleButton"><a routerLink="fishing">Рыбалка</a></p>
+        <p class="visibleButton"><a routerLink="clothes">Одежда</a></p>
+        <p class="visibleButton"><a routerLink="contacts">Контакты</a></p>
+        <p class="visibleButton"><a routerLink="about">О нас</a></p>
+        <p class="phone visibleButton"><fa-icon [icon]="faPhone"></fa-icon> +375 (44) 157-17-45</p>        
     </div>
     
 </div>

@@ -13,6 +13,16 @@
 {
     background-color: #F9F6F1;
 }
+
+input
+{
+    display: none;
+}
+label
+{
+    cursor: pointer;
+    display: none;
+}
 img
 {
     height: 50px;
@@ -35,4 +45,39 @@ p
 {
     font-weight: 700;
     font-size: 15px;
+}
+
+@media only screen and (max-width:1024px)
+{
+    .headerDiv
+    {
+        flex-direction: column;
+        justify-content: unset;
+        align-items: center;
+        height: unset;
+        gap:20px;
+        // border-bottom: 5px black solid;
+        padding-bottom: 5px;
+        margin-bottom: 5px;
+        // font-size: 30px;
+
+    }
+    img
+    {
+        height: 30px;
+    }
+    label
+    {
+        display: unset;
+        margin-top: 3px;
+        font-size: 30px;
+    }
+    .visibleButton
+    {
+        display: none;
+    }
+    input:checked ~ .visibleButton
+    {
+        display: unset;
+    }
 }

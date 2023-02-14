@@ -42,3 +42,33 @@ img
     color: #CBCFD4;
 
 }
+@media only screen and (max-width:1024px)
+{
+    .footerDiv
+    {
+        flex-direction: column;
+    }
+    .links
+    {
+        flex-direction: column;
+        margin-top: 20px;
+        gap: 20px;
+        width: 80%;
+        align-items: center;
+        text-align: justify;
+    }
+    .linkList
+    {
+        width: 100%;
+        text-align: center;
+    }
+    .linkP
+    {
+        width: 100%;
+    }
+    .linkP2
+    {
+        
+        width: 100%;
+    }
+}
