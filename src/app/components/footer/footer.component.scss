@@ -5,7 +5,7 @@
 .footerDiv
 {
     display: flex;
-     gap: 40%;
+     
     max-width: 1080px;
     margin-left: auto;
     margin-right: auto;
@@ -41,6 +41,11 @@ img
     line-height: 22px;    
     color: #CBCFD4;
 
+}
+.text
+{
+    width: 250px;
+    text-align: center;
 }
 @media only screen and (max-width:1024px)
 {
