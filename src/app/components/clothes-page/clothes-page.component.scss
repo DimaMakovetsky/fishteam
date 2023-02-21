@@ -22,6 +22,10 @@
     box-shadow: 1px 1px #212121;
     height: fit-content;
 }
+.item:hover
+{
+    box-shadow: 1px 1px white;
+}
 .title
 {
     font-weight: 700;
@@ -57,6 +61,12 @@ img
     border-radius: 40px;
     font-weight: 700;
     cursor: pointer;
+}
+.choice:hover
+{
+    color: rgb(250, 129, 0);
+    background-color: black;
+    transition: 0.5s;
 }
 .errorDiv
 {
